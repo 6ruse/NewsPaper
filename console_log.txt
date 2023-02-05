@@ -1,0 +1,91 @@
+from django.contrib.auth.models import User
+
+User.objects.create_user('username1')
+
+User.objects.create_user('username2')
+
+from news.models import Author
+user1 = User.objects.get(pk=1)
+Author.objects.create(autor=user1)
+user2 = User.objects.get(pk=2)
+Author.objects.create(autor=user2)
+
+from news.models import Category
+Category.objects.create(nm_category="Category1")
+Category.objects.create(nm_category="Category2")
+Category.objects.create(nm_category="Category3")
+Category.objects.create(nm_category="Category4")
+
+from news.models import Post
+autor1 = Author.objects.get(pk=1)
+Post.objects.create(autor=autor1, post_type="A", post_title="post_title", post_text="post_text")
+autor2 = Author.objects.get(pk=2)
+Post.objects.create(autor=autor2, post_type="A", post_title="post_title2", post_text="post_text2")
+Post.objects.create(autor=autor2, post_type="N", post_title="post_title3", post_text="post_text3")
+
+from news.models import CategoryPost
+cat1 = Category.objects.get(pk=1)
+cat2 = Category.objects.get(pk=2)
+cat3 = Category.objects.get(pk=3)
+
+post1 = Post.objects.get(pk=1)
+post2 = Post.objects.get(pk=2)
+post3 = Post.objects.get(pk=3)
+CategoryPost.objects.create(category=cat1, post=post1)
+CategoryPost.objects.create(category=cat2, post=post1)
+
+CategoryPost.objects.create(category=cat2, post=post2)
+CategoryPost.objects.create(category=cat3, post=post2)
+
+CategoryPost.objects.create(category=cat3, post=post3)
+CategoryPost.objects.create(category=cat3, post=post1)
+
+
+from news.models import Comment
+Comment.objects.create(post=post1, user=user1, comment_text="comment_text")
+Comment.objects.create(post=post2, user=user2, comment_text="comment_text2")
+Comment.objects.create(post=post3, user=user2, comment_text="comment_text3")
+Post.objects.create(autor=autor2, post_type="N", post_title="post_title4", post_text="post_text4")
+post4 = Post.objects.get(pk=4)
+Comment.objects.create(post=post4, user=user1, comment_text="comment_text4")
+Comment.objects.create(post=post1, user=user1, comment_text="comment_text5")
+
+
+Comment.objects.get(id=1).like()
+Comment.objects.get(id=1).like()
+Comment.objects.get(id=1).like()
+Comment.objects.get(id=1).dislike()
+Comment.objects.get(id=1).comment_raiting
+
+Comment.objects.get(id=2).like()
+Comment.objects.get(id=2).like()
+Comment.objects.get(id=2).dislike()
+Comment.objects.get(id=2).comment_raiting
+
+Comment.objects.get(id=3).like()
+Comment.objects.get(id=3).like()
+Comment.objects.get(id=3).comment_raiting
+
+Comment.objects.get(id=4).like()
+Comment.objects.get(id=4).comment_raiting
+
+Author.objects.get(id=1).update_rating()
+Author.objects.get(id=2).update_rating()
+
+autorBest = Author.objects.order_by('-raiting')[:1]
+autorBest[0].autor.username
+autorBest[0].raiting
+
+postBest = Comment.objects.order_by('-comment_raiting')[:1]
+postBest[0].post.date_time_create
+postBest[0].post.autor.autor.username
+postBest[0].comment_raiting
+postBest[0].post.post_title
+postBest[0].post.preview()
+
+comments = Comment.objects.filter(post = postBest[0].post)
+>>> for i in comments: 
+...     i.post.date_time_create
+...     i.post.autor.autor.username 
+...     i.comment_raiting 
+...     i.post.preview() 
