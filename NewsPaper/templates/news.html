@@ -1,0 +1,32 @@
+{% extends 'flatpages/default.html' %}
+
+{% load custom_filters %}
+
+{% block title %}
+News
+{% endblock title %}
+
+{% block content %}
+   <h1>Все новости {{news|length}}</h1>
+   <hr>
+   {% if news %}
+       <table>
+           <tr>
+               <td>заголовок</td>
+               <td>дата публикации</td>
+               <td>аннотация</td>
+           </tr>
+
+           {% for newsOne in news %}
+           <tr>
+               <td>{{ newsOne.post_title }}</td>
+               <td>{{ newsOne.date_time_create|date:'d.m.yy' }}</td>
+               <td>{{ newsOne.post_text|truncatewords:20|censor }}</td>
+           </tr>
+           {% endfor %}
+
+       </table>
+   {% else %}
+       <h2>Новостей нет!</h2>
+   {% endif %}
+{% endblock content %}

@@ -1,0 +1,14 @@
+{% extends 'flatpages/default.html' %}
+
+{% load custom_filters %}
+
+{% block title %}
+News
+{% endblock title %}
+
+{% block content %}
+<h1>{{ newsOne }}</h1>
+{{newsOne.date_time_create|date:'d.m.yy' }}
+<hr>
+{{ newsOne.post_text|censor }}
+{% endblock content %}
