@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.db.models import Sum
+from django.urls import reverse
 
 class Author(models.Model):
     autor = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -54,6 +55,9 @@ class Post(models.Model):
 
     def preview(self):
         return self.post_text[0:123] + '...'
+
+    def get_absolute_url(self):
+        return reverse('newsOne', args=[str(self.id)])
 
     # Метод get_context_data позволяет нам изменить набор данных,
     # который будет передан в шаблон.

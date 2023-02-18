@@ -1,5 +1,6 @@
-from django_filters import FilterSet, ModelChoiceFilter
+from django_filters import FilterSet, ModelChoiceFilter, DateTimeFilter
 from .models import Post, Category
+from django.forms import DateTimeInput
 
 # Создаем свой набор фильтров для модели Product.
 # FilterSet, который мы наследуем,
@@ -11,6 +12,14 @@ class PostFilter(FilterSet):
         label='Категория',
         empty_label='Все'
 
+    )
+    added_after = DateTimeFilter(
+        field_name='date_time_create',
+        lookup_expr='gt',
+        widget=DateTimeInput(
+            format='%Y-%m-%dT%H:%M',
+            attrs={'type': 'datetime-local'},
+        ),
     )
 
     class Meta:
