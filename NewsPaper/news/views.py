@@ -5,6 +5,7 @@ from .forms import (CategoryForm, NewsForm, ArticlesForm)
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 
 class CategoryList(ListView):
     # Указываем модель, объекты которой мы будем выводить
@@ -83,32 +84,39 @@ def create_category(request):
 #
 #     return render(request, 'postEdit.html', {'form': form})
 
-class NewsCreate(CreateView):
+class NewsCreate(PermissionRequiredMixin, LoginRequiredMixin, CreateView):
+    permission_required = ('news.add_post',)
+    raise_exception = True
     form_class = NewsForm
     model = Post
     template_name = 'postEdit.html'
 
-class NewsUpdate(UpdateView):
+class NewsUpdate(PermissionRequiredMixin, LoginRequiredMixin, UpdateView):
+    permission_required = ('news.change_post',)
     form_class = NewsForm
     model = Post
     template_name = 'postEdit.html'
 
-class NewsDelete(DeleteView):
+class NewsDelete(PermissionRequiredMixin, LoginRequiredMixin, DeleteView):
+    permission_required = ('news.delete_post',)
     model = Post
     template_name = 'postDelete.html'
     success_url = reverse_lazy('news')
 
-class ArticlesCreate(CreateView):
+class ArticlesCreate(PermissionRequiredMixin, LoginRequiredMixin, CreateView):
+    permission_required = ('news.add_post',)
     form_class = ArticlesForm
     model = Post
     template_name = 'articlesEdit.html'
 
-class ArticlesUpdate(UpdateView):
+class ArticlesUpdate(PermissionRequiredMixin, LoginRequiredMixin, UpdateView):
+    permission_required = ('news.change_post',)
     form_class = ArticlesForm
     model = Post
     template_name = 'articlesEdit.html'
 
-class ArticlesDelete(DeleteView):
+class ArticlesDelete(PermissionRequiredMixin, LoginRequiredMixin, DeleteView):
+    permission_required = ('news.delete_post',)
     model = Post
     template_name = 'articlesDelete.html'
     success_url = reverse_lazy('news')
