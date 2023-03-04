@@ -156,3 +156,22 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_FORMS = {"signup": "accounts.forms.CustomSignupForm"}
+
+# настройка почты
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = "bor1s.nov"
+EMAIL_HOST_PASSWORD = "Ljsdfkjh1@"
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+
+DEFAULT_FROM_EMAIL = "bor1s.nov@yandex.ru"
+
+SERVER_EMAIL = "example@yandex.ru"
+MANAGERS = (
+    ('Ivan', 'ivan@yandex.ru'),
+    ('Petr', 'petr@yandex.ru'),
+)
+
+EMAIL_SUBJECT_PREFIX = 'Новостной портал'

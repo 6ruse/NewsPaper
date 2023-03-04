@@ -20,6 +20,10 @@ class Author(models.Model):
 
 class Category(models.Model):
   nm_category = models.CharField(max_length=150, unique=True)
+  subscribers = models.ManyToManyField(User,
+                                       blank=True,
+                                       related_name='categories',
+                                       )
   def __str__(self):
     return self.nm_category.title()
 
@@ -93,3 +97,15 @@ class Comment(models.Model):
         if self.comment_raiting > 0:
             self.comment_raiting -= 1
         self.save()
+
+class Subscription(models.Model):
+    user = models.ForeignKey(
+        to=User,
+        on_delete=models.CASCADE,
+        related_name='subscriptions',
+    )
+    category = models.ForeignKey(
+        to='Category',
+        on_delete=models.CASCADE,
+        related_name='subscriptions',
+    )
