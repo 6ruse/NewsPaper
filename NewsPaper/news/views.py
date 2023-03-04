@@ -134,21 +134,21 @@ def subscriptions(request):
         action = request.POST.get('action')
 
         if action == 'subscribe':
-            Subscription.objects.create(user=request.user, category=category)
+            category.subscribers.add(request.user)
         elif action == 'unsubscribe':
-            Subscription.objects.filter(
-                user=request.user,
-                category=category,
+            category.subscribers.objects.filter(
+                request.user
             ).delete()
 
     categories_with_subscriptions = Category.objects.annotate(
         user_subscribed=Exists(
-            Subscription.objects.filter(
-                user=request.user,
-                category=OuterRef('pk'),
+            Category.objects.filter(
+                id=OuterRef('pk'),
+                subscribers=request.user,
             )
         )
     ).order_by('nm_category')
+
     return render(
         request,
         'subscriptions.html',

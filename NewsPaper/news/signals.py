@@ -14,7 +14,7 @@ def post_created(sender, instance, **kwargs):
 
         for cat in categories.all():
             subscribers = cat.subscribers.all()
-            emails += [s.emails for s in subscribers]
+            emails += [s.email for s in subscribers.user]
 
         subject = f'Новая новость в категории'
 
