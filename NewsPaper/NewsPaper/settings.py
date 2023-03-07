@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.yandex',
 
     'django.contrib.sites',
+    'django_apscheduler',
 ]
 
 MIDDLEWARE = [
@@ -162,7 +163,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = "bor1s.nov"
-EMAIL_HOST_PASSWORD = "Ljsdfkjh1@"
+EMAIL_HOST_PASSWORD = "123"
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 

@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
 from django.core.mail import EmailMultiAlternatives
 from django.db.models.signals import m2m_changed
 from django.dispatch import receiver
@@ -26,9 +26,6 @@ def post_created(sender, instance, **kwargs):
             f'Название: {instance.post_title}\n'
             f'Ссылка на новость: http://127.0.0.1{instance.get_absolute_url()}'
         )
-        print('emails start')
-        print(emails)
-        print('emails end')
         for email in emails:
             msg = EmailMultiAlternatives(subject, text_content, None, [email])
             msg.attach_alternative(html_content, "text/html")

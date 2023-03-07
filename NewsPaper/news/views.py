@@ -3,26 +3,37 @@ from django.db.models import Exists, OuterRef
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_protect
 from django.views.generic import (ListView, DetailView, CreateView, UpdateView, DeleteView)
-from .models import Category, Post, Subscription
+from .models import Category, Post
 from .filters import PostFilter
 from .forms import (CategoryForm, NewsForm, ArticlesForm)
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
-
+from django.shortcuts import get_object_or_404
 class CategoryList(ListView):
-    # Указываем модель, объекты которой мы будем выводить
-    model = Category
-    # Поле, которое будет использоваться для сортировки объектов
-    ordering = 'nm_category'
-    # Указываем имя шаблона, в котором будут все инструкции о том,
-    # как именно пользователю должны быть показаны наши объекты
+    model = Post
     template_name = 'category.html'
-    # Это имя списка, в котором будут лежать все объекты.
-    # Его надо указать, чтобы обратиться к списку объектов в html-шаблоне.
-    context_object_name = 'category'
+    context_object_name = 'category_news_list'
+    def get_queryset(self):
+        self.category = get_object_or_404(Category, id=self.kwargs['pk'])
+        queryset = Post.objects.filter(category=self.category)
+        return queryset
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['is_not_subscruber'] = self.request.user not in self.category.subscribers.all()
+        context['category'] = self.category
+        return context
 
+@login_required
+def subscribe(request, pk):
+    user = request.user
+    category = Category.objects.get(id=pk)
+    category.subscribers.add(user)
+
+    message = 'Подписка оформлена'
+
+    return render(request, 'subscribe.html', {'category': category, 'message': message})
 class CategoryDetail(DetailView):
     # Модель всё та же, но мы хотим получать информацию по отдельному товару
     model = Category
@@ -136,9 +147,8 @@ def subscriptions(request):
         if action == 'subscribe':
             category.subscribers.add(request.user)
         elif action == 'unsubscribe':
-            category.subscribers.objects.filter(
-                request.user
-            ).delete()
+            if category.subscribers.filter(id=request.user.id).exists():
+                category.subscribers.remove(request.user)
 
     categories_with_subscriptions = Category.objects.annotate(
         user_subscribed=Exists(

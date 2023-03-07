@@ -97,15 +97,3 @@ class Comment(models.Model):
         if self.comment_raiting > 0:
             self.comment_raiting -= 1
         self.save()
-
-class Subscription(models.Model):
-    user = models.ForeignKey(
-        to=User,
-        on_delete=models.CASCADE,
-        related_name='subscriptions',
-    )
-    category = models.ForeignKey(
-        to='Category',
-        on_delete=models.CASCADE,
-        related_name='subscriptions',
-    )
