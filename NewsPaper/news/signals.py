@@ -1,5 +1,3 @@
-# from django.contrib.auth.models import User
-from django.core.mail import EmailMultiAlternatives
 from django.db.models.signals import m2m_changed
 from django.dispatch import receiver
 from .models import CategoryPost
@@ -15,7 +13,7 @@ def post_created(sender, instance, **kwargs):
 
         for cat in categories.all():
             subscribers = cat.subscribers.all()
-            emails += [s.email for s in subscribers.user]
+            emails += [s.email for s in subscribers]
 
         send_subscribers.delay(instance.get_absolute_url(), instance.post_title, emails)
 

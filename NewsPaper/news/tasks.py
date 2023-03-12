@@ -1,6 +1,7 @@
 from celery import shared_task
 import time
 from django.core.mail import EmailMultiAlternatives
+from .models import Category, Post
 
 @shared_task
 def send_subscribers(url_news, post_title, emails):
@@ -18,6 +19,8 @@ def send_subscribers(url_news, post_title, emails):
         msg = EmailMultiAlternatives(subject, text_content, None, [email])
         msg.attach_alternative(html_content, "text/html")
         msg.send()
+
+    print('send_subscribers is work')
 
 @shared_task
 def weekly_posts():
