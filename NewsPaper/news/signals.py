@@ -17,17 +17,28 @@ def post_created(sender, instance, **kwargs):
             subscribers = cat.subscribers.all()
             emails += [s.email for s in subscribers.user]
 
-        subject = f'Новая новость в категории'
+        send_subscribers.delay(instance.get_absolute_url(), instance.post_title, emails)
 
-        text_content = (
-            f'Название: {instance.post_title}\n'
-            f'Ссылка на новость: http://127.0.0.1{instance.get_absolute_url()}'
-        )
-        html_content = (
-            f'Название: {instance.post_title}\n'
-            f'Ссылка на новость: http://127.0.0.1{instance.get_absolute_url()}'
-        )
-        for email in emails:
-            msg = EmailMultiAlternatives(subject, text_content, None, [email])
-            msg.attach_alternative(html_content, "text/html")
-            msg.send()
+    # if kwargs['action'] == 'post_add':
+    #     categories = instance.category.all()
+    #
+    #     emails = []
+    #
+    #     for cat in categories.all():
+    #         subscribers = cat.subscribers.all()
+    #         emails += [s.email for s in subscribers.user]
+    #
+    #     subject = f'Новая новость в категории'
+    #
+    #     text_content = (
+    #         f'Название: {instance.post_title}\n'
+    #         f'Ссылка на новость: http://127.0.0.1{instance.get_absolute_url()}'
+    #     )
+    #     html_content = (
+    #         f'Название: {instance.post_title}\n'
+    #         f'Ссылка на новость: http://127.0.0.1{instance.get_absolute_url()}'
+    #     )
+    #     for email in emails:
+    #         msg = EmailMultiAlternatives(subject, text_content, None, [email])
+    #         msg.attach_alternative(html_content, "text/html")
+    #         msg.send()
