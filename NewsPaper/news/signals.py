@@ -3,6 +3,7 @@ from django.core.mail import EmailMultiAlternatives
 from django.db.models.signals import m2m_changed
 from django.dispatch import receiver
 from .models import CategoryPost
+from .tasks import send_subscribers
 
 
 @receiver(m2m_changed, sender=CategoryPost)
