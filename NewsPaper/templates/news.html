@@ -3,9 +3,13 @@
 {% load custom_filters %}
 {% load custom_tags %}
 
-{% block title %}
-News
-{% endblock title %}
+{% load cache %} <!-- Загружаем кэширование -->
+    {% cache 30 title %} <!-- Кэшируем отдельный блок на 30 секунд -->
+        {% block title %}
+        News
+        {% endblock title %}
+    {% endcache %}
+
 
 {% block content %}
    <h1>Все новости {{news|length}}</h1>

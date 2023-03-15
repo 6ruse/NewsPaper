@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models import Sum
 from django.urls import reverse
+from django.core.cache import cache
 
 class Author(models.Model):
     autor = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -62,6 +63,10 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('newsOne', args=[str(self.id)])
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs) # сначала вызываем метод родителя, чтобы объект сохранился
+        cache.delete(f'post-{self.pk}') # затем удаляем его из кэша, чтобы сбросить его
 
     # Метод get_context_data позволяет нам изменить набор данных,
     # который будет передан в шаблон.
