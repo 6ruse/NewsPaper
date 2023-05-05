@@ -1,46 +1,11 @@
-2023-04-21 12:00:41,240 INFO Watching for file changes with StatReloader
-2023-04-21 12:00:44,667 WARNING Not Found: /
-2023-04-21 12:00:44,667 WARNING "GET / HTTP/1.1" 404 2276
-2023-04-21 12:02:14,471 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:02:15,091 INFO Watching for file changes with StatReloader
-2023-04-21 12:02:40,517 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:02:41,068 INFO Watching for file changes with StatReloader
-2023-04-21 12:02:41,068 INFO Watching for file changes with StatReloader
-2023-04-21 12:03:15,849 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:03:15,849 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:03:16,457 INFO Watching for file changes with StatReloader
-2023-04-21 12:03:49,140 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:03:49,723 INFO Watching for file changes with StatReloader
-2023-04-21 12:03:55,342 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:03:55,949 INFO Watching for file changes with StatReloader
-2023-04-21 12:04:02,618 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:04:03,217 INFO Watching for file changes with StatReloader
-2023-04-21 12:05:09,154 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:05:09,767 INFO Watching for file changes with StatReloader
-2023-04-21 12:05:43,223 INFO Watching for file changes with StatReloader
-2023-04-21 12:05:47,987 WARNING Not Found: /
-2023-04-21 12:05:47,988 WARNING "GET / HTTP/1.1" 404 2276
-2023-04-21 12:07:32,111 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:07:32,530 INFO Watching for file changes with StatReloader
-2023-04-21 12:07:54,141 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:08:01,993 INFO Watching for file changes with StatReloader
-2023-04-21 12:10:05,059 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:10:05,706 INFO Watching for file changes with StatReloader
-2023-04-21 12:10:09,878 INFO Watching for file changes with StatReloader
-2023-04-21 12:10:12,001 WARNING "GET / HTTP/1.1" 404 2276
-2023-04-21 12:10:54,224 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:10:54,814 INFO Watching for file changes with StatReloader
-2023-04-21 12:11:05,696 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:11:06,335 INFO Watching for file changes with StatReloader
-2023-04-21 12:11:16,119 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:11:16,775 INFO Watching for file changes with StatReloader
-2023-04-21 12:11:24,485 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:11:25,076 INFO Watching for file changes with StatReloader
-2023-04-21 12:11:32,455 INFO Watching for file changes with StatReloader
-2023-04-21 12:12:40,655 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:17:08,839 INFO Watching for file changes with StatReloader
-2023-04-21 12:18:10,677 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:18:11,287 INFO Watching for file changes with StatReloader
-2023-04-21 12:18:54,388 INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:18:54,983 INFO Watching for file changes with StatReloader
-2023-04-21 12:19:00,001 INFO Watching for file changes with StatReloader
+2023-05-05 21:34:49,649 INFO Watching for file changes with StatReloader
+2023-05-05 21:36:47,561 INFO D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-05 21:36:48,276 INFO Watching for file changes with StatReloader
+2023-05-05 21:36:52,173 INFO Watching for file changes with StatReloader
+2023-05-05 21:37:24,750 INFO D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-05 21:37:25,400 INFO Watching for file changes with StatReloader
+2023-05-05 21:37:30,895 INFO Watching for file changes with StatReloader
+2023-05-05 21:38:53,568 INFO D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-05 21:38:54,278 INFO Watching for file changes with StatReloader
+2023-05-05 21:38:56,937 INFO Watching for file changes with StatReloader
+2023-05-05 21:40:05,804 INFO Watching for file changes with StatReloader

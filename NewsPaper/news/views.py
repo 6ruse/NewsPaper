@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Exists, OuterRef
 # from django.shortcuts import render
 from django.views.decorators.csrf import csrf_protect
-from django.views.generic import (ListView, DetailView, CreateView, UpdateView, DeleteView)
+from django.views.generic import (ListView, DetailView, CreateView, UpdateView, DeleteView, View)
 from .models import Category, Post
 from .filters import PostFilter
 from .forms import (CategoryForm, NewsForm, ArticlesForm)
@@ -12,6 +12,29 @@ from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.shortcuts import get_object_or_404
 from django.core.cache import cache # импортируем наш кэш
+from django.utils.translation import gettext as _ # импортируем функцию для перевода
+from django.http import HttpResponse
+
+from django.shortcuts import redirect
+from django.utils import timezone
+import pytz #  импортируем стандартный модуль для работы с часовыми поясами
+
+# Create your views here.
+class Index(View):
+    def get(self, request):
+        curent_time = timezone.now()
+        # . Translators: This message appears on the home page only
+        models = Category.objects.all()
+        context = {
+            'models': models,
+            'current_time': timezone.now(),
+            'timezones': pytz.common_timezones #  добавляем в контекст все доступные часовые пояса
+        }
+        return HttpResponse(render(request, 'index.html', context))
+
+    def post(self, request):
+        request.session['django_timezone'] = request.POST['timezone']
+        return redirect('/')
 class CategoryList(ListView):
     model = Post
     template_name = 'category.html'
@@ -32,7 +55,7 @@ def subscribe(request, pk):
     category = Category.objects.get(id=pk)
     category.subscribers.add(user)
 
-    message = 'Подписка оформлена'
+    message = _('Подписка оформлена')
 
     return render(request, 'subscribe.html', {'category': category, 'message': message})
 class CategoryDetail(DetailView):
@@ -67,7 +90,16 @@ class PostList(ListView):
         context = super().get_context_data(**kwargs)
         # Добавляем в контекст объект фильтрации.
         context['filterset'] = self.filterset
+
+        context['current_time'] = timezone.now()
+        context['timezones'] = pytz.common_timezones #  добавляем в контекст все доступные часовые пояса
+
         return context
+
+    def post(self, request):
+        request.session['django_timezone'] = request.POST['timezone']
+        return HttpResponseRedirect('/news/')
+
 
 class PostSearch(PostList):
     template_name = 'newsSearch.html'

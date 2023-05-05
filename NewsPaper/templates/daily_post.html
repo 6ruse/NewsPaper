@@ -1,11 +1,13 @@
+{% load i18n %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Уведомление</title>
+    <title>{% trans "Уведомление" %}</title>
 </head>
 <body>
-  <h2>Новые статьи за неделю</h2>
+  <h2>{% trans "Новые статьи за неделю" %}</h2>
   <ul>
     {% for post in posts %}
     <li><a href="{{link}}{{ post.get_absolute_url }}">{{ post.post_title }}</a></li>

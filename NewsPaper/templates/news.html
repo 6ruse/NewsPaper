@@ -1,5 +1,8 @@
 {% extends 'flatpages/default.html' %}
 
+{% load i18n %}
+{% load tz %}
+
 {% load custom_filters %}
 {% load custom_tags %}
 
@@ -12,15 +15,32 @@
 
 
 {% block content %}
-   <h1>Все новости {{news|length}}</h1>
+
+    {% get_current_timezone as TIME_ZONE %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label>Time zone:</label>
+        <select name="timezone"  id="1">
+            {% for tz in timezones %}
+            <option value="{{ tz }}"{% if tz == TIME_ZONE %} selected{% endif %}>{{ tz }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Set">
+    </form>
+
+    {{ TIME_ZONE }}
+    {{ current_time|timezone:TIME_ZONE }} <!-- Отображаем время в выбранном часовом поясе  -->
+
+
+   <h1>{% trans "Все новости портала" %} {{news|length}}</h1>
 
    <hr>
    {% if news %}
        <table>
            <tr>
-               <td>заголовок</td>
-               <td>дата публикации</td>
-               <td>аннотация</td>
+               <td>{% trans "заголовок" %}</td>
+               <td>{% trans "дата публикации" %}</td>
+               <td>{% trans "аннотация" %}</td>
            </tr>
 
            {% for newsOne in news %}
@@ -33,7 +53,7 @@
 
        </table>
    {% else %}
-       <h2>Новостей нет!</h2>
+       <h2>{% trans "Новостей нет!" %}</h2>
    {% endif %}
 
 {# Добавляем пагинацию на страницу #}
@@ -59,7 +79,7 @@
 
     {# Теперь будем проверять не request.user.is_authenticated, а конкретные права #}
     {% if perms.news.add_post %}
-    <a href="{% url 'postEdit' %}">Добавить новость</a>
+    <a href="{% url 'postEdit' %}">{% trans "Добавить новость" %}</a>
     {% endif %}
 
 {% endblock content %}

@@ -1,34 +1,11 @@
-2023-04-21 12:03:16,457 C:\Users\6ruse\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\autoreload.py INFO Watching for file changes with StatReloader None
-2023-04-21 12:03:49,140 C:\Users\6ruse\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\autoreload.py INFO D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading. None
-2023-04-21 12:03:49,723 INFO C:\Users\6ruse\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\autoreload.py  Watching for file changes with StatReloader None
-2023-04-21 12:03:55,342 INFO C:\Users\6ruse\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\autoreload.py  D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading. None
-2023-04-21 12:04:03,217 INFO autoreload C:\Users\6ruse\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\autoreload.py  Watching for file changes with StatReloader None
-2023-04-21 12:05:09,154 INFO autoreload C:\Users\6ruse\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\autoreload.py  D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading. None
-2023-04-21 12:05:09,767 INFO autoreload Watching for file changes with StatReloader
-2023-04-21 12:05:43,223 INFO autoreload Watching for file changes with StatReloader
-2023-04-21 12:05:47,987 WARNING log Not Found: /
-2023-04-21 12:05:47,988 WARNING basehttp "GET / HTTP/1.1" 404 2276
-2023-04-21 12:07:32,111 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:07:32,530 INFO autoreload Watching for file changes with StatReloader
-2023-04-21 12:07:54,141 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:08:01,993 INFO autoreload Watching for file changes with StatReloader
-2023-04-21 12:10:05,059 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:10:05,706 INFO autoreload Watching for file changes with StatReloader
-2023-04-21 12:10:09,878 INFO autoreload Watching for file changes with StatReloader
-2023-04-21 12:10:12,001 WARNING basehttp "GET / HTTP/1.1" 404 2276
-2023-04-21 12:10:54,224 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:10:54,814 INFO autoreload Watching for file changes with StatReloader
-2023-04-21 12:11:05,696 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:11:06,335 INFO autoreload Watching for file changes with StatReloader
-2023-04-21 12:11:16,119 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:11:16,775 INFO autoreload Watching for file changes with StatReloader
-2023-04-21 12:11:24,485 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:11:25,076 INFO autoreload Watching for file changes with StatReloader
-2023-04-21 12:11:32,455 INFO autoreload Watching for file changes with StatReloader
-2023-04-21 12:12:40,655 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:17:08,839 INFO autoreload Watching for file changes with StatReloader
-2023-04-21 12:18:10,677 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:18:11,287 INFO autoreload Watching for file changes with StatReloader
-2023-04-21 12:18:54,388 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
-2023-04-21 12:18:54,983 INFO autoreload Watching for file changes with StatReloader
-2023-04-21 12:19:00,001 INFO autoreload Watching for file changes with StatReloader
+2023-05-05 21:34:49,649 INFO autoreload Watching for file changes with StatReloader
+2023-05-05 21:36:47,561 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-05 21:36:48,276 INFO autoreload Watching for file changes with StatReloader
+2023-05-05 21:36:52,173 INFO autoreload Watching for file changes with StatReloader
+2023-05-05 21:37:24,750 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-05 21:37:25,400 INFO autoreload Watching for file changes with StatReloader
+2023-05-05 21:37:30,895 INFO autoreload Watching for file changes with StatReloader
+2023-05-05 21:38:53,568 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-05 21:38:54,278 INFO autoreload Watching for file changes with StatReloader
+2023-05-05 21:38:56,937 INFO autoreload Watching for file changes with StatReloader
+2023-05-05 21:40:05,804 INFO autoreload Watching for file changes with StatReloader

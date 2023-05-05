@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-24 11:21+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\news\views.py:20
+msgid "Hello world"
+msgstr ""
+
+#: .\news\views.py:43
+msgid "Подписка оформлена"
+msgstr "Subscribed"
+
+#: .\templates\403.html:7
+msgid "Ошибка 403"
+msgstr "Error 403"
+
+#: .\templates\403.html:10
+msgid "Кажется, у Вас нет доступа к данной странице..."
+msgstr "You don't seem to have access to this page..."
+
+#: .\templates\account\email\email_confirmation_message.txt:5
+#, python-format
+msgid ""
+"Вы получили это сообщение, потому что пользователь %(user_display)s указал "
+"этот email при регистрации на сайте %(site_domain)s.\n"
+"\n"
+"Для подтверждения регистрации пройдите по ссылке %(activate_url)s\n"
+"\n"
+"Хорошего дня!\n"
+msgstr ""
+
+#: .\templates\articlesDelete.html:6
+msgid "Удаление статью"
+msgstr "Deleting an article"
+
+#: .\templates\articlesDelete.html:10 .\templates\postDelete.html:10
+msgid "Удаляем"
+msgstr "Delete"
+
+#: .\templates\articlesEdit.html:6
+msgid "Статьи"
+msgstr "Articles"
+
+#: .\templates\articlesEdit.html:11 .\templates\categoryEdit.html:9
+#: .\templates\postEdit.html:9
+msgid "Сохранить"
+msgstr "Save"
+
+#: .\templates\category.html:12
+msgid "Все новости категории"
+msgstr "All category news"
+
+#: .\templates\category.html:20 .\templates\news.html:21
+#: .\templates\newsSearch.html:25
+msgid "заголовок"
+msgstr "header"
+
+#: .\templates\category.html:21
+msgid "категория"
+msgstr "category"
+
+#: .\templates\category.html:22 .\templates\news.html:22
+#: .\templates\newsSearch.html:26
+msgid "дата публикации"
+msgstr "publication date"
+
+#: .\templates\category.html:23 .\templates\news.html:23
+#: .\templates\newsSearch.html:27
+msgid "аннотация"
+msgstr "annotation"
+
+#: .\templates\category.html:41 .\templates\news.html:36
+#: .\templates\newsSearch.html:40
+#, fuzzy
+#| msgid "Новостной портал"
+msgid "Новостей нет!"
+msgstr "News portal"
+
+#: .\templates\category.html:67 .\templates\news.html:62
+#, fuzzy
+#| msgid "Поиск новостей"
+msgid "Добавить новость"
+msgstr "News Search"
+
+#: .\templates\categoryEdit.html:4
+#, fuzzy
+#| msgid "категория"
+msgid "Категория"
+msgstr "category"
+
+#: .\templates\daily_post.html:7
+msgid "Уведомление"
+msgstr "Notification"
+
+#: .\templates\daily_post.html:10
+msgid "Новые статьи за неделю"
+msgstr "New articles per week"
+
+#: .\templates\flatpages\default.html:21
+msgid "Новостной портал"
+msgstr "News portal"
+
+#: .\templates\news.html:15
+msgid "Все новости портала"
+msgstr "All category news"
+
+#: .\templates\newsSearch.html:11
+msgid "Поиск новостей"
+msgstr "News Search"
+
+#: .\templates\newsSearch.html:18
+msgid "Найти"
+msgstr "Find"
+
+#: .\templates\postDelete.html:6
+#, fuzzy
+#| msgid "Удаление статью"
+msgid "Удаление новости"
+msgstr "Deleting an article"
+
+#: .\templates\postEdit.html:4
+#, fuzzy
+#| msgid "Поиск новостей"
+msgid "Новости!"
+msgstr "News Search"
+
+#: .\templates\subscriptions.html:16 .\templates\subscriptions.html:19
+msgid "Подписаться"
+msgstr "Subscribe"
+
+#: .\templates\subscriptions.html:17
+msgid "Отписаться"
+msgstr "Unsubscribe"
+
+#, fuzzy
+#~| msgid "Поиск новостей"
+#~ msgid "Все новости "
+#~ msgstr "News all"
