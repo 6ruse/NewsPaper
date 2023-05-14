@@ -9,3 +9,131 @@
 2023-05-05 21:38:54,278 INFO autoreload Watching for file changes with StatReloader
 2023-05-05 21:38:56,937 INFO autoreload Watching for file changes with StatReloader
 2023-05-05 21:40:05,804 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 20:02:40,868 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 20:16:59,667 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 20:20:42,864 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 20:20:43,606 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 20:21:43,776 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 20:21:46,712 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 20:21:57,519 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 20:21:58,085 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 20:24:04,582 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\urls.py changed, reloading.
+2023-05-14 20:24:05,333 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 20:25:49,279 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\urls.py changed, reloading.
+2023-05-14 20:25:49,889 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 20:26:23,162 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\urls.py changed, reloading.
+2023-05-14 20:26:23,815 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 20:26:47,537 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\urls.py changed, reloading.
+2023-05-14 20:26:48,141 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 20:57:14,483 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 20:57:59,885 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 20:58:00,515 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:01:52,169 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 21:01:52,780 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:02:12,001 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 21:02:12,632 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:02:18,948 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:05:56,529 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 21:05:57,242 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:09:06,333 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:09:06,998 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:09:42,358 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:09:43,038 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:09:49,905 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:09:50,584 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:19:48,055 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:23:26,898 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:23:27,568 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:24:14,835 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:24:15,519 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:26:44,801 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:26:45,487 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:27:17,977 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:27:18,602 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:27:50,495 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:27:51,119 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:29:14,356 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:29:36,710 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:29:37,288 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:30:05,529 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:30:06,121 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:30:17,488 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:30:41,510 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:30:42,103 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:31:32,988 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:31:33,726 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:31:42,683 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:31:43,314 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:31:57,844 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:31:58,473 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:33:10,799 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:33:11,458 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:34:22,706 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 21:34:23,469 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:36:07,052 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 21:36:07,689 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:36:17,703 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 21:36:18,378 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:36:30,964 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 21:37:18,100 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\urls.py changed, reloading.
+2023-05-14 21:37:18,738 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:06:22,288 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 22:06:22,999 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:06:29,639 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 22:06:30,295 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:21:41,432 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 22:21:42,147 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:22:13,006 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 22:22:13,645 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:22:34,291 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 22:22:34,925 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:25:30,225 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 22:25:30,810 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:27:45,224 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 22:27:45,958 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:30:07,391 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:33:17,141 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 22:33:17,815 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:33:54,566 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\serializers.py changed, reloading.
+2023-05-14 22:33:58,339 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:35:56,580 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\urls.py changed, reloading.
+2023-05-14 22:35:57,242 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:36:06,215 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\urls.py changed, reloading.
+2023-05-14 22:36:06,806 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:44:57,580 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 22:44:58,312 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:45:23,986 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 22:45:24,631 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:48:30,985 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 22:48:31,674 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:48:42,770 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 22:48:43,401 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:49:46,220 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 22:49:46,905 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:53:26,260 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 22:53:26,940 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:53:46,631 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 22:53:47,297 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 22:54:26,341 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 22:54:27,053 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 23:05:16,044 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\urls.py changed, reloading.
+2023-05-14 23:05:16,723 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 23:23:32,067 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 23:23:32,915 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 23:24:18,494 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 23:24:19,122 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 23:24:50,927 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 23:24:51,532 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 23:28:49,851 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-05-14 23:28:50,486 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 23:29:47,346 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 23:29:48,034 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 23:29:53,592 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 23:54:33,331 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 23:55:17,245 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 23:55:50,094 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 23:55:50,729 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 23:57:18,922 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 23:57:19,584 INFO autoreload Watching for file changes with StatReloader
+2023-05-14 23:58:08,106 INFO autoreload D:\project\Python\NewsPaper\NewsPaper\news\views.py changed, reloading.
+2023-05-14 23:58:08,748 INFO autoreload Watching for file changes with StatReloader

@@ -8,3 +8,6 @@ NewsPaper/news/__pycache__/urls.cpython-311.pyc
 NewsPaper/news/__pycache__/views.cpython-311.pyc
 *.pyc
 *.pyc
+*.log
+*.log
+*.pyc

@@ -14,10 +14,54 @@ from django.shortcuts import get_object_or_404
 from django.core.cache import cache # импортируем наш кэш
 from django.utils.translation import gettext as _ # импортируем функцию для перевода
 from django.http import HttpResponse
+from rest_framework.response import Response
 
 from django.shortcuts import redirect
 from django.utils import timezone
 import pytz #  импортируем стандартный модуль для работы с часовыми поясами
+
+from django.shortcuts import render
+from rest_framework import viewsets
+from rest_framework import permissions
+
+from .serializers import *
+from .models import *
+
+class NewsViewset(viewsets.ModelViewSet):
+   queryset = Post.objects.filter(post_type = Post.in_news)
+   serializer_class = NewsSerializer
+   def get_permissions(self):
+        if self.request.method == 'GET':
+            self.permission_classes = []
+        else:
+           self.permission_classes = [permissions.IsAuthenticated]
+
+        return super(ArticlesViewset, self).get_permissions()
+
+   def destroy(self, request, pk, format=None):
+       instance = self.get_object()
+       self.check_object_permissions(self.request, instance)
+       instance.delete()
+       return Response(status=status.HTTP_204_NO_CONTENT)
+
+class ArticlesViewset(viewsets.ModelViewSet):
+   queryset = Post.objects.filter(post_type = Post.in_article)
+   serializer_class = NewsSerializer
+
+   def get_permissions(self):
+        if self.request.method == 'GET':
+            self.permission_classes = []
+        else:
+           self.permission_classes = [permissions.IsAuthenticated]
+
+        return super(ArticlesViewset, self).get_permissions()
+
+   def destroy(self, request, pk, format=None):
+       instance = self.get_object()
+       self.check_object_permissions(self.request, instance)
+       instance.delete()
+       return Response(status=status.HTTP_204_NO_CONTENT)
+
 
 # Create your views here.
 class Index(View):
